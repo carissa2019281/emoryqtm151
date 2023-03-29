@@ -63,7 +63,9 @@ You can keep the files in the original folder
 - Replace "data_name" with the relevant table
 - Replace the "pathname" with the file path
 -- SQLBook: Code
-\COPY data_name FROM 'data_path.csv' WITH (DELIMITER ',', FORMAT csv, HEADER MATCH);
+\COPY bill_actions FROM '/private/tmp/data/bills_actions.csv' WITH (DELIMITER ',', FORMAT csv, HEADER MATCH);
+\COPY bill_subjects FROM '/private/tmp/data/bills_subjects.csv' WITH (DELIMITER ',', FORMAT csv, HEADER MATCH);
+\COPY us_congress_members FROM '/private/tmp/data/us_congress_members.csv' WITH (DELIMITER ',', FORMAT csv, HEADER MATCH);
 
 -- Common error I:
 
