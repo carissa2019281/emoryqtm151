@@ -88,6 +88,9 @@ $\qquad$ <img src="figures/view_table_sql.png" alt="drawing" width="350"/>
 -- Click "refresh" to see changes
 -- The pencil button edits column attributes
 -- The three-stripes button opens the table
+
+INSERT INTO drivers  VALUES (2, 'Gabbie Brew', 'American',25);
+
 -- SQLBook: Markup
 <font size="5"> 
 
@@ -113,7 +116,7 @@ Extracting columns from table
 -- SELECT extracts certain COLUMNS
 -- FROM is used to indicate the source table
 
-SELECT driver_id nationality FROM drivers;
+SELECT driver_id, nationality FROM drivers;
 -- SQLBook: Markup
 <font size="5"> 
 
@@ -187,7 +190,8 @@ Try it yourself!
 with more than 60 victories
 -- SQLBook: Code
 -- Write your own code!
-
+SELECT * FROM drivers
+WHERE (nationality = 'German') AND (victories > 53);
 
 
 
